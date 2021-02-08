@@ -21,7 +21,7 @@ stages:
         filePath: '$(System.DefaultWorkingDirectory)/.azure-pipeline/ymlparser.ps1'
         arguments: $(System.DefaultWorkingDirectory) $(yamlFileName)
       name: yamlParsedValues  
-    - script: echo "#$yamlParsedValues.cloud#"  
+    - script: echo "#$(yamlParsedValues.cloud)#"  
   - job: Build2
     dependsOn: Build1
     condition: eq(dependencies.Build1.outputs['yamlParsedValues.cloud'], 'fairfax')
