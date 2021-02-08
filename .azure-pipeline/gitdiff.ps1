@@ -1,6 +1,6 @@
 $sourceversion=$args[0]
 echo "passing sourceversion $sourceversion"
-$files=$(git diff-tree --no-commit-id --name-only -r $sourceversion)
+$files=$(git diff-tree --no-commit-id --name-only -r master)
 $temp=$files -split ' '
 $count=$temp.Length
 echo "Total changed $count files"
