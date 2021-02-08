@@ -8,7 +8,7 @@ testconfig:
   # Location of the instance
   location: fooLocation
   # Cloud where this instance is deployed
-  cloud: public
+  cloud: fairfax
   # Email for the first admin user
   email: foo@foo.com
   # User name for the first admin user
