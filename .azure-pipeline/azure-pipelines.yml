@@ -18,11 +18,11 @@ steps:
     filePath: '$(System.DefaultWorkingDirectory)/.azure-pipeline/accounttypeselector.ps1'
     arguments: $(cloud)    
 - task: AzurePowerShell@4
-        displayName: 'Check Resource Name Availability in local instance'
-        inputs: 
-          connectedServiceNameARM: $(connectedServiceNameARM)
-          scriptType: filePath
-          scriptArguments: 
-            -Type $(cloud) -AccountName $(accountName)
-          scriptPath: '$(ServiceRootPath)/CheckResourceNameAvailability.ps1'
-          azurePowershellVersion: latestVersion
+  displayName: 'Check Resource Name Availability in local instance'
+  inputs: 
+    connectedServiceNameARM: $(connectedServiceNameARM)
+    scriptType: filePath
+    scriptArguments:
+      -Type $(cloud) -AccountName $(accountName)
+    scriptPath: '$(ServiceRootPath)/CheckResourceNameAvailability.ps1'
+    azurePowershellVersion: latestVersion
