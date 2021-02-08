@@ -20,7 +20,7 @@ steps:
 - task: AzurePowerShell@4
   displayName: 'Check Resource Name Availability in local instance'
   inputs: 
-    connectedServiceNameARM: $(connectedServiceNameARM)
+    connectedServiceNameARM: 26e35a82-77e5-49a3-be01-746aa941c154
     scriptType: filePath
     scriptArguments:
       -Type $(cloud) -AccountName $(accountName)
