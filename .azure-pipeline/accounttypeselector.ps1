@@ -1,4 +1,5 @@
 $cloudVal=$args[0]
+echo "found the values $cloudVal"
 if ($cloudVal -like 'public'){
     Write-Host '##vso[task.setvariable variable=connectedServiceNameARM;]26e35a82-77e5-49a3-be01-746aa941c154'
     echo "the service is public"
