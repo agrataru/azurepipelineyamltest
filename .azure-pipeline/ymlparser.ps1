@@ -14,10 +14,10 @@ $locationVal = $yaml.testconfig.location
 $cloudVal = $yaml.testconfig.cloud
 $emailVal = $yaml.testconfig.email
 $userNameVal = $yaml.testconfig.userName
-Write-Host '##vso[task.setvariable variable=accountType;]'$accountTypeVal
-Write-Host '##vso[task.setvariable variable=customerName;]'$customerNameVal
-Write-Host '##vso[task.setvariable variable=accountName;]'$accountNameVal
-Write-Host '##vso[task.setvariable variable=location;]'$locationVal
-Write-Host '##vso[task.setvariable variable=cloud;]'$cloudVal
-Write-Host '##vso[task.setvariable variable=email;]'$emailVal
-Write-Host '##vso[task.setvariable variable=userName;]'$userNameVal
+Write-Host '##vso[task.setvariable variable=accountType;isOutput=true]'$accountTypeVal
+Write-Host '##vso[task.setvariable variable=customerName;isOutput=true]'$customerNameVal
+Write-Host '##vso[task.setvariable variable=accountName;isOutput=true]'$accountNameVal
+Write-Host '##vso[task.setvariable variable=location;isOutput=true]'$locationVal
+Write-Host '##vso[task.setvariable variable=cloud;isOutput=true]'$cloudVal
+Write-Host '##vso[task.setvariable variable=email;isOutput=true]'$emailVal
+Write-Host '##vso[task.setvariable variable=userName;isOutput=true]'$userNameVal
