@@ -15,6 +15,7 @@ $cloudVal = $yaml.testconfig.cloud
 $cloudVal = $cloudVal.Trim()
 $emailVal = $yaml.testconfig.email
 $userNameVal = $yaml.testconfig.userName
+echo "this is being set here $cloudVal"
 Write-Host '##vso[task.setvariable variable=accountType;isOutput=true]'$accountTypeVal.Trim()
 Write-Host '##vso[task.setvariable variable=customerName;isOutput=true]'$customerNameVal.Trim()
 Write-Host '##vso[task.setvariable variable=accountName;isOutput=true]'$accountNameVal.Trim()
