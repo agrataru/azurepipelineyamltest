@@ -16,3 +16,8 @@ $emailVal = $yaml.testconfig.email
 $userNameVal = $yaml.testconfig.userName
 echo "##vso[task.setvariable variable=cloud;isOutput=true]$cloudVal"
 echo "##vso[task.setvariable variable=accountType;isOutput=true]$accountTypeVal"
+echo "##vso[task.setvariable variable=customerName;isOutput=true]$customerNameVal"
+echo "##vso[task.setvariable variable=accountName;isOutput=true]$accountNameVal"
+echo "##vso[task.setvariable variable=location;isOutput=true]'$locationVal"
+echo "##vso[task.setvariable variable=email;isOutput=true]'$emailVal"
+echo "##vso[task.setvariable variable=userName;isOutput=true]$userNameVal"
